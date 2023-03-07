@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Stratesys meets Goiko</title>
+
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section class="mainSection">
+            <div class="meetsDiv">
+                <div class="mainStratesys"><span>stratesys</span></div>
+                <div class="mainMeets"><span>meets</span></div>
+                <div class="mainGoiko"><img src="goiko.svg"></div>
+            </div>
+        </section>
+        <section class="selectionSection">
+            <div class="tileCiudad" onclick="setMapACoruna();">A Coruña</div>
+            <div class="tileCiudad" onclick="setMapAlmaden();">Almadén</div>
+            <div class="tileCiudad" onclick="setMapBarcelona();">Barcelona</div>
+            <div class="tileCiudad" onclick="setMapBilbao();">Bilbao</div>
+            <div class="tileCiudad" onclick="setMapLleida();">Lleida</div>
+            <div class="tileCiudad" onclick="setMapMadrid();">Madrid</div>
+            <div class="tileCiudad" onclick="setMapOviedo();">Oviedo</div>
+            <div class="tileCiudad" onclick="setMapSevilla();">Sevilla</div>
+            <div class="tileCiudad" onclick="setMapValencia();">Valencia</div>
+        </section>
+        <section class="mapSection">
+            <h1 id="mapTitle"></h1>
+            <div id="mapDiv"></div>
+        </section>
+    </body>
+</html>

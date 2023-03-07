@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "default";
+    src: url("HelveticaNeue-CondensedBold.ttf");
+}
+* {
+    font-family: "default";
+}
+
+body {
+    margin: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url("background2.jpg");
+    background-size: cover;
+}
+
+.mainSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-bottom: 2rem;
+    border-bottom: 5px solid black;
+
+    background-image: url("background1.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.mainSection > .meetsDiv {
+    width: 100%;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 30% [col-start]);
+    column-gap: 5%;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    
+}
+
+.mainSection > .meetsDiv > * {
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainStratesys {
+    font-size: 4.5rem;
+    color: #013b75;
+}
+
+.mainMeets {
+    font-size: 3rem;
+    color: #444;
+}
+
+.mainGoiko  > img{
+    width: 70%;
+}
+
+.selectionSection {
+    width: 100%;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 30% [col-start]);
+    column-gap: 5%;
+    row-gap: 1rem;
+}
+
+.selectionSection > .tileCiudad {
+    width: 100%;
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 1rem;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.selectionSection > .tileCiudad:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.iframeMap {
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 800px;
+    height: 600px;
+    
+    margin-bottom: 2rem;
+
+    background: url("cargando.png") center no-repeat;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.divNoMap {
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 800px;
+    height: 600px;
+    padding: 8rem;
+    
+    margin-bottom: 2rem;
+
+    background-color: rgba(255, 255, 255, 0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 62px;
+    text-align: center;
+}
